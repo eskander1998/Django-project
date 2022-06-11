@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1> Liste des projets </h1>
+
+
+<ul>
+    {% for c in object_list %}
+    <li> {{c.project_name}}  </li> 
+    <li> {{c.project_duration}}  </li> 
+    <li> {{c.needs}}  </li> 
+
+    {% endfor %}     
+</ul>    
+
+{% endblock %}

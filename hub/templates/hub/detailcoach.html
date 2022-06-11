@@ -1,0 +1,11 @@
+ {% extends 'base.html' %}
+
+ {% block content %}
+<a href=" {% url 'Hub_Coach_list' %}"> Retour Liste Coach </a>
+<ul>
+    <li>{{detailcoach.name}} </li> 
+    <li>{{detailcoach.first_name}}  </li> 
+
+</ul>    
+
+{% endblock %}

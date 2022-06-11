@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1> Liste des coachs </h1>
+
+
+<ul>
+    {% for c in list_Coach %}
+    <li> <a href="{% url 'Hub_detail_Coach' c.id %}"> {{c.first_name}} </a> </li> 
+
+    {% endfor %}     
+</ul>    
+
+{% endblock %}
